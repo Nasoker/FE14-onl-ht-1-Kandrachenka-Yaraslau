@@ -1,23 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-}
-
-.container {
-    max-width: 1170px;
+.awesome {
     margin: auto;
-    padding: 0 15px;
-    text-align: center;
-}
-
-.awesome-container {
-    margin: auto;
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 109px;
 }
 
 .awesome-title {
@@ -25,6 +9,7 @@
     font-size: 36px;
     text-align: center;
     margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
 .awesome-line {
@@ -35,6 +20,8 @@
 }
 
 .awesome-descr {
+    margin: auto;
+    max-width: 363px;
     font-size: 14px;
     color: #86878B;
     margin-bottom: 67px;
@@ -43,6 +30,10 @@
 .awesome-row {
     display: flex;
     justify-content: space-between;
+}
+
+.awesome-row__item {
+    max-width: 350px;
 }
 
 .awesome-row__circle {
@@ -65,5 +56,4 @@
 
 .awesome-row__text {
     font-size: 14px;
-    max-width: 350px;
 }
