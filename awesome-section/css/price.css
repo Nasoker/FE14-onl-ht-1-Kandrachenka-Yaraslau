@@ -33,44 +33,51 @@
     justify-content: space-between;
 }
 
-.price-about-row,
-.price-info-row {
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-}
-
-.price-about-row {
-    margin-bottom: 2px;
+.price-row__item {
+    max-width: 340px;
+    width: 100%;
 }
 
 .price-about-row__item {
-    background: #333333;
-    color: white;
-    margin-bottom: 2px;
-    height: 50px;
+    background: #FFFFFF;
+    height: 40px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #86878B;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 4px;
+}
+
+.price-about-row__item_1,
+.price-about-row__item_2,
+.price-about-row__item_3 {
+    margin: 0;
+    background: #333333;
+    color: white;
+    margin-bottom: 2px;
 }
 
 .price-about-row__item_1 {
+    height: 50px;
     font-weight: 700;
     font-size: 20px;
 }
 
 .price-about-row__item_2 {
-    flex-basis: 100px;
+    height: 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 35px;
-    line-height: 41px;
 }
 
 .price-about-row__item_3 {
+    height: 50px;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 600;
     font-size: 14px;
+    margin-bottom: 4px;
 }
 
 .price-about-row__item_3:hover {
@@ -78,16 +85,4 @@
     cursor: pointer;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 800;
-}
-
-.price-info-row__item {
-    background: #FFFFFF;
-    margin-bottom: 4px;
-    height: 50px;
-    font-size: 14px;
-    line-height: 19px;
-    color: #86878B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
