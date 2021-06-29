@@ -7,15 +7,18 @@
 .awesome-title {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
+    font-weight: 400;
     text-align: center;
-    margin-bottom: 25px;
     text-transform: uppercase;
 }
 
-.awesome-line {
+.awesome-title::after {
+    content: "";
+    display: block;
     margin: auto;
     width: 64px;
     border-top: 1px solid #D98943;
+    margin-top: 25px;
     margin-bottom: 30px;
 }
 
@@ -29,11 +32,14 @@
 
 .awesome-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .awesome-row__item {
     max-width: 350px;
+    margin: 0 15px;
 }
 
 .awesome-row__circle {

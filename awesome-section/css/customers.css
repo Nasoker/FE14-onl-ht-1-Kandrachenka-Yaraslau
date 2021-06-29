@@ -1,0 +1,97 @@
+.customers {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.customers-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.customers-title::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 64px;
+    border-top: 1px solid #D98943;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.customers-descr {
+    margin: auto;
+    max-width: 363px;
+    font-size: 14px;
+    color: #86878B;
+    margin-bottom: 67px;
+}
+
+.customers-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -15px
+}
+
+.customers-row__item {
+    margin: 0 15px
+}
+
+.customers-row__item-comment {
+    background: #E2E2E2;
+    width: 298px;
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.customers-row__item-comment-text {
+    padding: 9px 22px 6px 23px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    color: #86878B;
+}
+
+.customers-row__item-comment::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    border-top: 14px solid #E2E2E2;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+}
+
+.customers-row__item-annotator {
+    display: flex;
+    justify-content: space-around;
+}
+
+.customers-row__item-annotator-photo__img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.customers-row__item-annotator-about {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.customers-row__item-annotator-about-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.customers-row__item-annotator-about-proffesion {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: auto;
+}

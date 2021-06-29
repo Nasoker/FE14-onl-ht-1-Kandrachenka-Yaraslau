@@ -8,16 +8,17 @@
 .price-title {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
+    font-weight: 400;
     text-align: center;
-    margin-bottom: 34px;
     text-transform: uppercase;
 }
 
-.price-line {
-    margin: auto;
+.price-title::after {
+    content: "";
+    display: block;
     width: 64px;
     border-top: 1px solid #D98943;
-    margin-bottom: 34px;
+    margin: 34px auto;
 }
 
 .price-descr {
@@ -28,21 +29,22 @@
     margin-bottom: 63px;
 }
 
-.price-row {
+.price-lists {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -15px
 }
 
-.price-row__item {
-    max-width: 340px;
-    width: 100%;
+.price-about-row {
+    width: 340px;
+    margin: 0 15px;
 }
 
 .price-about-row__item {
     background: #FFFFFF;
-    height: 40px;
+    line-height: 40px;
     font-size: 14px;
-    line-height: 19px;
     color: #86878B;
     display: flex;
     align-items: center;
@@ -50,39 +52,43 @@
     margin-bottom: 4px;
 }
 
-.price-about-row__item_1,
-.price-about-row__item_2,
-.price-about-row__item_3 {
+.price-about-row__item_black {
     margin: 0;
     background: #333333;
     color: white;
     margin-bottom: 2px;
+    line-height: 50px;
 }
 
-.price-about-row__item_1 {
-    height: 50px;
+.price-about-row__item_black:first-child {
     font-weight: 700;
     font-size: 20px;
 }
 
-.price-about-row__item_2 {
-    height: 100px;
+.price-about-row__item_black:nth-child(2) {
+    line-height: 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 35px;
 }
 
-.price-about-row__item_3 {
-    height: 50px;
-    color: rgba(255, 255, 255, 0.5);
+.price-about-row__item_black:nth-child(3) {
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 4px;
 }
 
-.price-about-row__item_3:hover {
+.price-about-row__item_black:hover:nth-child(3) {
     background: #D98943;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 800;
+}
+
+.price-about-row__item__link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.price-about-row__item:last-child {
+    margin-bottom: 0;
 }
