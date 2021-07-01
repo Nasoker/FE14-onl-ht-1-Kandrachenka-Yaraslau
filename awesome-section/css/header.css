@@ -1,0 +1,32 @@
+.header {
+    background: rgba(0, 0, 0, 1);
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+
+.header>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-row {
+    display: flex;
+    justify-content: space-between;
+    width: 489px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.header-nav-row__item-link {
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.2s;
+}
+
+.header-nav-row__item-link:hover {
+    cursor: pointer;
+    border: 3px solid #EC7979;
+    border-top: 0;
+    border-right: 0;
+}

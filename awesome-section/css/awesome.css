@@ -54,6 +54,11 @@
     align-items: center;
 }
 
+.awesome-row__circle>i {
+    font-size: 30px;
+    color: #D98943
+}
+
 .awesome-row__title {
     font-size: 20px;
     font-weight: 700;

@@ -72,10 +72,16 @@
     justify-content: space-around;
 }
 
-.customers-row__item-annotator-photo__img {
+.customers-row__item-annotator-photo {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.customers-row__item-annotator-photo__img {
+    height: 100%;
+    width: 100%;
 }
 
 .customers-row__item-annotator-about {
