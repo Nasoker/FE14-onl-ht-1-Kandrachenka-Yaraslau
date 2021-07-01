@@ -76,6 +76,7 @@
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 4px;
+    transition: 0.2s;
 }
 
 .price-about-row__item_black:hover:nth-child(3) {
