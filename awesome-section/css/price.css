@@ -41,6 +41,11 @@
     margin: 0 15px;
 }
 
+.price-about-row:last-child,
+.price-about-row:first-child {
+    margin-top: 15px;
+}
+
 .price-about-row__item {
     background: #FFFFFF;
     line-height: 40px;
