@@ -3,8 +3,10 @@
 @import url("../css/customers.css");
 @import url("../css/axure.css");
 @import url("../css/header.css");
-@import url("../css/social-list.css");
+@import url("../css/social.css");
 @import url("../css/footer.css");
+@import url("../css/first-slide.css");
+@import url("../css/contacts.css");
 html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;

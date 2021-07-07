@@ -9,6 +9,22 @@
     justify-content: space-between;
 }
 
+.header-logo-link {
+    color: white;
+}
+
+.header-logo-text {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 31px;
+}
+
+.header-logo-text::after {
+    content: "IT";
+    color: #EC7979;
+}
+
 .header-nav-row {
     display: flex;
     justify-content: space-between;
