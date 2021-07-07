@@ -42,7 +42,7 @@
     margin: 0 15px;
 }
 
-.awesome-row__circle {
+.awesome-row__img {
     margin: auto;
     width: 70px;
     height: 70px;
@@ -54,7 +54,7 @@
     align-items: center;
 }
 
-.awesome-row__circle>i {
+.awesome-row__img>i {
     font-size: 30px;
     color: #D98943
 }
