@@ -16,7 +16,7 @@
 .header-logo-text {
     font-family: "Raleway";
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 31px;
 }
 
@@ -29,10 +29,14 @@
     display: flex;
     justify-content: space-between;
     width: 489px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
+}
+
+.header-nav-row__item {
+    line-height: 31px;
 }
 
 .header-nav-row__item-link {
@@ -45,4 +49,8 @@
     border: 3px solid #EC7979;
     border-top: 0;
     border-right: 0;
+}
+
+.header-humburger-menu{
+    display:none;
 }

@@ -7,9 +7,12 @@
 @import url("../css/footer.css");
 @import url("../css/first-slide.css");
 @import url("../css/contacts.css");
+@import url("../css/tabs.css");
+@import url("../css/media.css");
 html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    font-size: 16px;
 }
 
 * {
@@ -25,4 +28,34 @@ html {
     margin: auto;
     padding: 0 15px;
     text-align: center;
+}
+
+@media  (min-width:1000px) and (max-width:1200px){
+    .container{
+        max-width:970px;
+    }
+
+    html{
+        font-size:15px;
+    }
+}
+
+@media (min-width:640px) and (max-width:999px) {
+    .container{
+        max-width:600px;
+    }
+
+    html{
+        font-size:14.5px;
+    }
+}
+
+@media (min-width:320px) and (max-width:639px) {
+    .container{
+        max-width:290px;
+    }
+
+    html{
+        font-size:12px;
+    }
 }
