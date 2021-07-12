@@ -7,7 +7,7 @@
 
 .price-title {
     font-family: 'Raleway', sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -24,7 +24,7 @@
 .price-descr {
     margin: auto;
     max-width: 363px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #86878B;
     margin-bottom: 63px;
 }
@@ -49,7 +49,7 @@
 .price-about-row__item {
     background: #FFFFFF;
     line-height: 40px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #86878B;
     display: flex;
     align-items: center;
@@ -67,19 +67,19 @@
 
 .price-about-row__item_black:first-child {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .price-about-row__item_black:nth-child(2) {
     line-height: 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 2.1875rem;
 }
 
 .price-about-row__item_black:nth-child(3) {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 4px;
     transition: 0.2s;
 }

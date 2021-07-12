@@ -5,7 +5,7 @@
 
 .customers-title {
     font-family: 'Raleway', sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -24,7 +24,7 @@
 .customers-descr {
     margin: auto;
     max-width: 363px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #86878B;
     margin-bottom: 67px;
 }
@@ -91,13 +91,13 @@
 }
 
 .customers-row__item-annotator-about-name {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 12px;
 }
 
 .customers-row__item-annotator-about-proffesion {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     margin-left: auto;
 }

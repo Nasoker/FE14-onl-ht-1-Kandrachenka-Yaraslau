@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/tabs.js" defer></script>
     <title>Sixth task</title>
 </head>
 
@@ -18,7 +19,7 @@
         <div class="container">
             <div class="header-logo">
                 <a href="#" class="header-logo-link">
-                    <h1 class="header-logo-text">AX</h1>
+                    <p class="header-logo-text">AX</p>
                 </a>
             </div>
             <nav class="header-nav">
@@ -35,32 +36,41 @@
                         <a href="#" class="header-nav-row__item-link">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-humburger-menu">
+                <a href="#" class="header-humburger-menu-link">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
         </div>
     </header>
     <section class="first-slide">
         <div class="container">
             <div class="first-slide-about">
                 <a class="first-slide-link" href="#">
-                    <h2 class="first-slide-title">AX</h2>
+                    <p class="first-slide-logo">AX</p>
                 </a>
-                <div class="first-slide-subtitle">modern axure template for beautiful prototypes</div>
+                <h1 class="first-slide-title">modern axure template for beautiful prototypes</h1>
                 <div class="first-slide-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
                 <a href="#" class="first-slide-btn">Download</a>
             </div>
-            <div class="first-slide-window">
+            <form name="first-slide-form" action="#" class="first-slide-form">
                 <h3 class="first-slide-form-title">Try Your <span class="first-slide-form-title-red">free</span> Trial Today</h3>
-                <form name="first-slide-form" action="#" class="first-slide-form">
-                    <div class="first-slide-form-about">
+                <div class="first-slide-form-about">
+                    <div class="first-slide-form__item">
                         <label for="name" class="firt-slide-label">Name</label>
                         <input type="text" id="name" class="first-slide-input__name">
+                    </div>
+                    <div class="first-slide-form__item">
                         <label for="email" class="firt-slide-label">Email</label>
                         <input type="email" id="email" class="first-slide-input__email">
+                    </div>
+                    <div class="first-slide-form__item">
                         <label for="password" class="firt-slide-label">Password</label>
                         <input type="password" id="password" class="first-slide-input__password">
                     </div>
-                    <button type="submit" form="first-slide-form" class="first-slide-btn-submit">Get Started</button>
-                </form>
-            </div>
+                </div>
+                <button type="submit" form="first-slide-form" class="first-slide-btn-submit">Get Started</button>
+            </form>
         </div>
         </div>
     </section>
@@ -111,6 +121,47 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </section>
+    <section class="tabs">
+        <div class="container">
+            <div class="tabs-row">
+                <div class="tabs-row__btns">
+                    <button class="tabs-row__btn tabs-row__btn-active" data-tabs-handler="tab1">tab 1</button>
+                    <button class="tabs-row__btn" data-tabs-handler="tab2">tab 2</button>
+                    <button class="tabs-row__btn" data-tabs-handler="tab3">tab 3</button>
+                </div>
+                <div class="tabs-row__content" data-tabs-field="tab1">
+                    <h3 class="tabs-title">Tabs with soft transitioning effect.</h3>
+                    <div class="tabs-row__text">
+                        <p class="tabs-row__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+                            dis parturient montes.</p>
+                        <p class="tabs-row__text-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    </div>
+                    <a href="#" class="tabs-row__link-btn">Download</a>
+                </div>
+                <div class="tabs-row__content hidden" data-tabs-field="tab2">
+                    <h3 class="tabs-title">Tabs with soft transitioning effect. TAB 2</h3>
+                    <div class="tabs-row__text">
+                        <p class="tabs-row__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+                            dis parturient montes.</p>
+                        <p class="tabs-row__text-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    </div>
+                    <a href="#" class="tabs-row__link-btn">Download</a>
+                </div>
+                <div class="tabs-row__content hidden" data-tabs-field="tab3">
+                    <h3 class="tabs-title">Tabs with soft transitioning effect. TAB 3</h3>
+                    <div class="tabs-row__text">
+                        <p class="tabs-row__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+                            dis parturient montes.</p>
+                        <p class="tabs-row__text-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    </div>
+                    <a href="#" class="tabs-row__link-btn">Download</a>
+                </div>
+                <div class="tabs-row__img-block">
+                    <img src="/assets/images/city.png" alt="city" class="tabs-row__img">
+                </div>
             </div>
         </div>
     </section>
@@ -262,14 +313,20 @@
                 <p class="contacts-descr-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <form action="#" name="contacts-form" class="contacts-form">
-                <div class="contacts-form-container">
+                <div class="contacts-form-row">
                     <div class="contacts-form-login">
-                        <label for="name" class="contacts-label">Name</label>
-                        <input type="text" id="name" class="contacts-input__name">
-                        <label for="email" class="contacts-label">Email</label>
-                        <input type="email" id="email" class="contacts-input__email">
-                        <label for="password" class="contacts-label">Password</label>
-                        <input type="password" id="password" class="contacts-input__password">
+                        <div class="contacts-form-login__item">
+                            <label for="name" class="contacts-label">Name</label>
+                            <input type="text" id="name" class="contacts-input__name">
+                        </div>
+                        <div class="contacts-form-login__item">
+                            <label for="email" class="contacts-label">Email</label>
+                            <input type="email" id="email" class="contacts-input__email">
+                        </div>
+                        <div class="contacts-form-login__item">
+                            <label for="password" class="contacts-label">Password</label>
+                            <input type="password" id="password" class="contacts-input__password">
+                        </div>
                     </div>
                     <div class="contacts-form-message">
                         <label class="contacts-label" for="message">Message</label>
