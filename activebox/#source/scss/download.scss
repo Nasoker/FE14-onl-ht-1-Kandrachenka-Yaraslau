@@ -1,0 +1,33 @@
+.download {
+    padding: 100px 0;
+    @media (min-width: 640px) and (max-width: 999px) {
+        padding-top: 0px;
+    }
+    @media (min-width: 320px) and (max-width: 639px) {
+        padding-top: 0px;
+    }
+    &-title {
+        color: #2d3033;
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 16px;
+    }
+    &-descr {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    &-btn {
+        padding: 18px 63px;
+        color: #ffffff;
+        font-size: 13px;
+        background-color: #e84545;
+        transition: 0.2s;
+        &:hover {
+            background-color: #c6cacc;
+            color: #e84545;
+            font-weight: 600;
+        }
+    }
+}

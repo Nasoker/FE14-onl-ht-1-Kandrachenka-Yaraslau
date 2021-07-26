@@ -1,0 +1,101 @@
+.workers {
+    padding-bottom: 101px;
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -15px;
+        @media (min-width: 640px) and (max-width: 999px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @media (min-width: 320px) and (max-width: 639px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__item {
+            margin: 0 15px;
+            @media (min-width: 640px) and (max-width: 999px) {
+                &:first-child, &:nth-child(2) {
+                    margin-bottom: 35px;
+                }
+                &>* {
+                    margin: auto;
+                }
+            }
+            @media (min-width: 320px) and (max-width: 639px) {
+                & {
+                    margin-bottom: 35px;
+                }
+                &>* {
+                    margin: auto;
+                }
+            }
+            &-img {
+                max-width: 270px;
+                margin-bottom: 30px;
+                @media (min-width: 1000px) and (max-width: 1300px) {
+                    max-width: 200px;
+                    border-radius: 50%;
+                }
+                @media (min-width: 640px) and (max-width: 999px) {
+                    max-width: 200px;
+                    border-radius: 50%;
+                }
+                @media (min-width: 320px) and (max-width: 639px) {
+                    max-width: 200px;
+                    border-radius: 50%;
+                }
+            }
+            &-about {
+                width: 265px;
+                @media (min-width: 1000px) and (max-width: 1300px) {
+                    width: 195px;
+                }
+                @media (min-width: 640px) and (max-width: 999px) {
+                    width: 195px;
+                    text-align: center;
+                }
+                @media (min-width: 320px) and (max-width: 639px) {
+                    width: 200px;
+                    text-align: center;
+                }
+            }
+            &-name {
+                font-size: 22px;
+                text-align: left;
+                margin-bottom: 16px;
+            }
+            &-profession {
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #e84545;
+                margin-bottom: 29px;
+                text-align: left;
+            }
+            &-comment {
+                text-align: left;
+                color: #6c7279;
+                font-size: 14px;
+                margin-bottom: 31px;
+            }
+            &-social-list {
+                width: 128px;
+                display: flex;
+                justify-content: space-between;
+                &-item-link {
+                    display: block;
+                    border: 1px solid #e8ecee;
+                    width: 40px;
+                    line-height: 40px;
+                    font-size: 18px;
+                    color: #c6cacc;
+                    transition: 0.2s;
+                    &:hover {
+                        border-color: #e84545;
+                        color: #e84545;
+                    }
+                }
+            }
+        }
+    }
+}
