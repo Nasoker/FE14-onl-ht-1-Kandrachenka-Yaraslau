@@ -1,0 +1,87 @@
+.testimonials {
+    width: 100%;
+    @media (min-width: 640px) and (max-width: 999px) {
+        display: none;
+    }
+    @media (min-width: 320px) and (max-width: 639px) {
+        display: none;
+    }
+    &-row {
+        display: flex;
+        flex-wrap: nowrap;
+        &-left-item {
+            max-width: 50%;
+            overflow: hidden;
+            position: relative;
+            &-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-right-item {
+            width: 50%;
+            background-color: #53354a;
+            padding: 114px 0px 101px 85px;
+            &-title {
+                width: 500px;
+                color: #ffffff;
+                font-family: "Cardo";
+                font-size: 36px;
+                letter-spacing: normal;
+                text-align: left;
+                line-height: 42px;
+                margin-bottom: 40px;
+            }
+            &-descr {
+                display: block;
+                font-size: 13px;
+                font-weight: 700;
+                text-align: left;
+                color: #ffffff;
+                text-transform: uppercase;
+                margin-bottom: 64px;
+            }
+            &-dots {
+                margin: auto;
+                width: 92px;
+            }
+        }
+    }
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    min-width: 0;
+    height: 500px;
+}
+
+.slick-slide {
+    width: 50%;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+    & li {
+        margin-left: 8px;
+    }
+    & button {
+        font-size: 0;
+        width: 12px;
+        height: 12px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.slick-dots li[class="slick-active"] button {
+    background-color: red;
+}

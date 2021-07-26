@@ -1,0 +1,20 @@
+.copyright {
+    padding: 29px 0px;
+    background-color: #313454;
+    &-text {
+        margin: auto;
+        color: #808080;
+        width: 312px;
+        font-size: 14px;
+        text-align: center;
+        @media (min-width: 320px) and (max-width: 639px) {
+            width: 270px;
+        }
+    }
+    &-author-link {
+        color: #ffffff;
+        &>i {
+            color: #e84545;
+        }
+    }
+}

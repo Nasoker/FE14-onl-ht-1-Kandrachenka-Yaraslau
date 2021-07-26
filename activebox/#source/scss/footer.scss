@@ -1,0 +1,80 @@
+.footer {
+    padding-top: 71px;
+    padding-bottom: 88px;
+    background-color: #3a3e64;
+    @media (min-width: 320px) and (max-width: 639px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -15px;
+        @media (min-width: 320px) and (max-width: 639px) {
+            display: block;
+            margin: 0;
+        }
+        &__item {
+            margin: 0 15px;
+            @media (min-width: 320px) and (max-width: 639px) {
+                margin: 0;
+                margin-bottom: 30px;
+            }
+            &-title {
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+                color: #ffffff;
+                margin-bottom: 21px;
+                @media (min-width: 320px) and (max-width: 639px) {
+                    margin-bottom: 10px;
+                }
+            }
+            &-location {
+                font-size: 14px;
+                font-weight: 400;
+                opacity: 0.5;
+                color: #ffffff;
+                width: 148px;
+                @media (min-width: 320px) and (max-width: 639px) {
+                    width: 100%;
+                }
+            }
+            &-descr {
+                font-size: 14px;
+                font-weight: 400;
+                opacity: 0.5;
+                color: #ffffff;
+                width: 329px;
+                @media (min-width: 640px) and (max-width: 999px) {
+                    width: 250px;
+                }
+                @media (min-width: 320px) and (max-width: 639px) {
+                    width: 100%;
+                }
+            }
+            &-social-list {
+                width: 128px;
+                display: flex;
+                justify-content: space-between;
+                @media (min-width: 320px) and (max-width: 639px) {
+                    margin: auto;
+                }
+                &__item-link {
+                    display: block;
+                    border: 1px solid #e8ecee;
+                    width: 40px;
+                    line-height: 40px;
+                    font-size: 18px;
+                    color: #c6cacc;
+                    transition: 0.2s;
+                    &:hover {
+                        border-color: #e84545;
+                        color: #e84545;
+                    }
+                }
+            }
+        }
+    }
+}
