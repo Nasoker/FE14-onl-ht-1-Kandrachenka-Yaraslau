@@ -1,7 +1,7 @@
 .header {
   padding-top: 38px;
   padding-bottom: 156px;
-  background-image: url(/assets/bg/header-bg.png);
+  background-image: url(../assets/bg/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
